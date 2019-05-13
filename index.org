@@ -3,6 +3,6 @@
 #+OPTIONS: toc:nil num:nil
 * Projects
 ** Slides
-   - [[https://imyp.github.io/slide/][Matrix operations]]
+   - [[http://imyp.github.io/slide/][Matrix operations]]
 ** Other
    - [[http:imyp.github.io/hello/][link]]
