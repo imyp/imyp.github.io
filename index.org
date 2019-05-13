@@ -4,4 +4,4 @@
 * Projects
 ** Slides
    Here I'll post slideshow-presentations that I have made.
-   - [[https:imyp.github.io/slides/][Matrix operations]]
+   - [[https:slides][Matrix operations]]
