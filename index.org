@@ -1,7 +1,8 @@
 #+TITLE: imyp
 #+AUTHOR: imyp
-#+OPTIONS: toc:nil
+#+OPTIONS: toc:nil num:nil
 * Projects
 ** Slides
-   Here I'll post slideshow-presentations that I have made.
    - [[https://imyp.github.io/slide/][Matrix operations]]
+** Other
+   - [[http:imyp.github.io/hello/][link]]
