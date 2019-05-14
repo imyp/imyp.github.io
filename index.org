@@ -1,8 +1,12 @@
-#+TITLE: imyp
+#+TITLE: Inti Manuel Yabar-Pagaza
 #+AUTHOR: imyp
 #+OPTIONS: toc:nil num:nil
-* Projects
+#+HTML_HEAD: <link rel="stylesheet" href="css/tufte.css" type="text/css" />
+Biochemist with interest in neuroscience, food science, math and
+statistics. This page contains information about me, as well as
+information that I find interesting.
+** CV
+   - HTML-version
+   - PDF-version
 ** Slides
-   - [[http://imyp.github.io/slide/][Matrix operations]]
-** Other
-   - [[http:imyp.github.io/hello/][link]]
+   - [[http://imyp.github.io/slides/][matrix slides]]
