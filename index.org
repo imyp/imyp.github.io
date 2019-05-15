@@ -6,6 +6,6 @@ Biochemist with interest in neuroscience, food science, math and
 statistics.
 ** CV
    - HTML-version
-   - [[https:imyp.github.io/cv-en.pdf][PDF-version]]
+   - [[https:imyp.github.io/cv/cv-en.pdf][PDF-version]]
 ** Slides
    - [[http://imyp.github.io/slides/][matrix slides]]
