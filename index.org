@@ -3,10 +3,9 @@
 #+OPTIONS: toc:nil num:nil
 #+HTML_HEAD: <link rel="stylesheet" href="css/tufte.css" type="text/css" />
 Biochemist with interest in neuroscience, food science, math and
-statistics. This page contains information about me, as well as
-information that I find interesting.
+statistics.
 ** CV
    - HTML-version
-   - PDF-version
+   - [[https:imyp.github.io/cv-en.pdf][PDF-version]]
 ** Slides
    - [[http://imyp.github.io/slides/][matrix slides]]
