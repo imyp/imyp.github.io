@@ -1,0 +1,92 @@
+#+Title: Notes on linear algebra
+#+Author: imyp
+
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_THEME: white
+#+OPTIONS: reveal_width:1300 reveal_height:1000
+#+REVEAL_TRANS: none
+#+OPTIONS: toc:nil num:nil reveal_title_slide:nil
+#+OPTIONS: reveal_center:nil
+#+REVEAL_EXTRA_CSS: ./local.css
+
+* Definition of a linear space
+#+ATTR_REVEAL: :frag (appear)
+  #+begin_quote
+  The concept of a linear space generalizes that of the set of all vectors.
+  #+end_quote
+#+ATTR_REVEAL: :frag (appear)
+A set $\mathbf{K}$ is called a /linear/ (or /affine/) /space over a
+field/ $K$ if 
+#+ATTR_REVEAL: :frag (appear appear appear)
+1) Given two elements $x,y \in \mathbf{K}$, there is a rule (the
+   addition rule) leading to a (unique) element $x+y\in \mathbf{K}$,
+   called the /sum/ of $x$ and $y$.
+2) Given any element $x\in \mathbf{K}$ and any number $\lambda \in K$,
+   there is a rule (the rule for multiplication by a number) leading to
+   a (unique) element $\lambda x \in \mathbf{K}$, called the /product/
+   of the element $x$ and the number $\lambda$.
+3) These two rules obey 8 specific axioms.
+
+* Properties of the addition rule
+
+1) $x+y=y+x$ for every $x,y\in \mathbf{K}$ (commutative);
+2) $(x+y)+z=x+(y+z)$ for every $x,y,z \in \mathbf{K}$ (associative);
+3) There exists an element $0\in \mathbf{K}$ (the /zero vector/) such
+   that $x+0=x$ for every $x\in\mathbf{K}$;
+4) For every $x\in\mathbf{K}$ there exists an element $y\in\mathbf{K}$
+   (the /negative element/) such that $x+y=0$.
+
+* Properties of the addition rule
+#+ATTR_REVEAL: :frag (appear)
+*Commutative*:
+$$x+y=y+x\text{ for every }x,y\in \mathbf{K}$$
+#+ATTR_REVEAL: :frag (appear)
+*Associative*:
+$$(x+y)+z=x+(y+z)\text{ for every }x,y,z \in \mathbf{K}$$
+#+ATTR_REVEAL: :frag (appear)
+*Identity element*:
+$$\text{An element }\mathbf{0}\in\mathbf{K}\text{ exists, such
+that }x+\mathbf{0}=x\text{ for every }x\in K$$
+#+ATTR_REVEAL: :frag (appear)
+*Inverse element*:
+$$\text{For every }x\in\mathbf{K}\text{ there exist an element
+}y\in\mathbf{K}\text{ such that }x+y=\mathbf{0}$$
+* Properties of the rule for multiplication by a number
+1) $1\cdot x=x$ for every $x\in\mathbf{K}$;
+2) $\alpha(\beta x)=(\alpha \beta)x$ for every $x\in\mathbf{K}$ and
+   every $\alpha,\beta \in K$;
+3) $(\alpha+\beta)x = \alpha x + \beta x$ for every $x\in\mathbf{K}$
+   and every $\alpha,\beta \in K$;
+4) $\alpha(x+y)=\alpha x+\alpha y$ for every $x,y \in \mathbf{K}$ and
+   every $\alpha \in K$.
+* Properties of multiplication
+#+ATTR_REVEAL: :frag (appear)
+*Identity element*:
+$$ 1 \cdot x = x\text{ for every } x\in\mathbf{K}$$
+#+ATTR_REVEAL: :frag (appear)
+*Associative*: 
+$$ \alpha(\beta x)=(\alpha \beta) x \text{ for every } x\in\mathbf{K}
+\text{ and every } \alpha,\beta\in K$$
+#+ATTR_REVEAL: :frag (appear)
+*Distributive with respect to $\mathbf{K}$*:
+$$(\alpha+\beta)x=\alpha x + \beta x \text{ for every } x\in\mathbf{K}
+\text{ and every } \alpha,\beta\in K$$
+#+ATTR_REVEAL: :frag (appear)
+*Distributive with respect to $K$*:
+$$\alpha(x+y)=\alpha x+\alpha y \text{ for every } x,y \in\mathbf{K}
+\text{ and every } \alpha \in K$$
+
+* Linear dependence
+#+ATTR_REVEAL: :frag (appear)
+Let $x_1,x_2,\ldots, x_k$ be vectors of the linear space $\mathbf{K}$
+over a field $K$.
+#+ATTR_REVEAL: :frag (appear)
+Let $\alpha_1,\alpha_2,\ldots, \alpha_k$ be numbers from $K$.
+#+ATTR_REVEAL: :frag (appear)
+Then the vector $\boxed{y=\alpha_1 x_1 + \alpha_2 x_2 +\cdots +
+\alpha_k x_k}$ is called a /linear combination/ of the vectors $x_1,
+x_2, \ldots , x_k$.
+#+ATTR_REVEAL: :frag (appear)
+The numbers $\alpha_1,\alpha_2,\ldots,\alpha_k$ are called the
+/coefficients/ of the linear combination.

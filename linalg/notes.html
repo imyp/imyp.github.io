@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Notes on linear algebra</title>
+<meta name="author" content="(imyp)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="file:///usr/local/src/reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="file:///usr/local/src/reveal.js/css/theme/white.css" id="theme"/>
+
+<link rel="stylesheet" href="./local.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'file:///usr/local/src/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<section>
+<section id="slide-org145d181">
+<h2 id="org145d181">Definition of a linear space</h2>
+<blockquote  class="fragment (appear)">
+<p>
+The concept of a linear space generalizes that of the set of all vectors.
+</p>
+</blockquote>
+<p class="fragment (appear)">
+A set \(\mathbf{K}\) is called a <i>linear</i> (or <i>affine</i>) <i>space over a
+field</i> \(K\) if 
+</p>
+<ol>
+<li class="fragment appear">Given two elements \(x,y \in \mathbf{K}\), there is a rule (the
+addition rule) leading to a (unique) element \(x+y\in \mathbf{K}\),
+called the <i>sum</i> of \(x\) and \(y\).</li>
+<li class="fragment appear">Given any element \(x\in \mathbf{K}\) and any number \(\lambda \in K\),
+there is a rule (the rule for multiplication by a number) leading to
+a (unique) element \(\lambda x \in \mathbf{K}\), called the <i>product</i>
+of the element \(x\) and the number \(\lambda\).</li>
+<li class="fragment appear">These two rules obey 8 specific axioms.</li>
+
+</ol>
+
+</section>
+</section>
+<section>
+<section id="slide-orgda55c2d">
+<h2 id="orgda55c2d">Properties of the addition rule</h2>
+<ol>
+<li>\(x+y=y+x\) for every \(x,y\in \mathbf{K}\) (commutative);</li>
+<li>\((x+y)+z=x+(y+z)\) for every \(x,y,z \in \mathbf{K}\) (associative);</li>
+<li>There exists an element \(0\in \mathbf{K}\) (the <i>zero vector</i>) such
+that \(x+0=x\) for every \(x\in\mathbf{K}\);</li>
+<li>For every \(x\in\mathbf{K}\) there exists an element \(y\in\mathbf{K}\)
+(the <i>negative element</i>) such that \(x+y=0\).</li>
+
+</ol>
+
+</section>
+</section>
+<section>
+<section id="slide-org68f60c6">
+<h2 id="org68f60c6">Properties of the addition rule</h2>
+<p class="fragment (appear)">
+<b>Commutative</b>:
+\[x+y=y+x\text{ for every }x,y\in \mathbf{K}\]
+</p>
+<p class="fragment (appear)">
+<b>Associative</b>:
+\[(x+y)+z=x+(y+z)\text{ for every }x,y,z \in \mathbf{K}\]
+</p>
+<p class="fragment (appear)">
+<b>Identity element</b>:
+\[\text{An element }\mathbf{0}\in\mathbf{K}\text{ exists, such
+that }x+\mathbf{0}=x\text{ for every }x\in K\]
+</p>
+<p class="fragment (appear)">
+<b>Inverse element</b>:
+\[\text{For every }x\in\mathbf{K}\text{ there exist an element
+}y\in\mathbf{K}\text{ such that }x+y=\mathbf{0}\]
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orgb907761">
+<h2 id="orgb907761">Properties of the rule for multiplication by a number</h2>
+<ol>
+<li>\(1\cdot x=x\) for every \(x\in\mathbf{K}\);</li>
+<li>\(\alpha(\beta x)=(\alpha \beta)x\) for every \(x\in\mathbf{K}\) and
+every \(\alpha,\beta \in K\);</li>
+<li>\((\alpha+\beta)x = \alpha x + \beta x\) for every \(x\in\mathbf{K}\)
+and every \(\alpha,\beta \in K\);</li>
+<li>\(\alpha(x+y)=\alpha x+\alpha y\) for every \(x,y \in \mathbf{K}\) and
+every \(\alpha \in K\).</li>
+
+</ol>
+</section>
+</section>
+<section>
+<section id="slide-orgee3c524">
+<h2 id="orgee3c524">Properties of multiplication</h2>
+<p class="fragment (appear)">
+<b>Identity element</b>:
+\[ 1 \cdot x = x\text{ for every } x\in\mathbf{K}\]
+</p>
+<p class="fragment (appear)">
+<b>Associative</b>: 
+\[ \alpha(\beta x)=(\alpha \beta) x \text{ for every } x\in\mathbf{K}
+\text{ and every } \alpha,\beta\in K\]
+</p>
+<p class="fragment (appear)">
+<b>Distributive with respect to \(\mathbf{K}\)</b>:
+\[(\alpha+\beta)x=\alpha x + \beta x \text{ for every } x\in\mathbf{K}
+\text{ and every } \alpha,\beta\in K\]
+</p>
+<p class="fragment (appear)">
+<b>Distributive with respect to \(K\)</b>:
+\[\alpha(x+y)=\alpha x+\alpha y \text{ for every } x,y \in\mathbf{K}
+\text{ and every } \alpha \in K\]
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org369e9c0">
+<h2 id="org369e9c0">Linear dependence</h2>
+<p class="fragment (appear)">
+Let \(x_1,x_2,\ldots, x_k\) be vectors of the linear space \(\mathbf{K}\)
+over a field \(K\).
+</p>
+<p class="fragment (appear)">
+Let \(\alpha_1,\alpha_2,\ldots, \alpha_k\) be numbers from \(K\).
+</p>
+<p class="fragment (appear)">
+Then the vector \(\boxed{y=\alpha_1 x_1 + \alpha_2 x_2 +\cdots +
+\alpha_k x_k}\) is called a <i>linear combination</i> of the vectors \(x_1,
+x_2, \ldots , x_k\).
+</p>
+<p class="fragment (appear)">
+The numbers \(\alpha_1,\alpha_2,\ldots,\alpha_k\) are called the
+<i>coefficients</i> of the linear combination.
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="file:///usr/local/src/reveal.js/lib/js/head.min.js"></script>
+<script src="file:///usr/local/src/reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: false,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+width: 1300,
+height: 1000,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'file:///usr/local/src/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'file:///usr/local/src/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///usr/local/src/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///usr/local/src/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:///usr/local/src/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>

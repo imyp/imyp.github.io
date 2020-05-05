@@ -1,0 +1,113 @@
+% Created 2019-07-09 Tue 19:29
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{imyp}
+\date{\today}
+\title{Notes on linear algebra}
+\hypersetup{
+ pdfauthor={imyp},
+ pdftitle={Notes on linear algebra},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 25.2.2 (Org mode 9.2.3)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section*{Definition of a linear space}
+\label{sec:org8c92a3f}
+\begin{quote}
+The concept of a linear space generalizes that of the set of all vectors.
+\end{quote}
+A set \(\mathbf{K}\) is called a \emph{linear} (or \emph{affine}) \emph{space over a
+field} \(K\) if 
+\begin{enumerate}
+\item Given two elements \(x,y \in \mathbf{K}\), there is a rule (the
+addition rule) leading to a (unique) element \(x+y\in \mathbf{K}\),
+called the \emph{sum} of \(x\) and \(y\).
+\item Given any element \(x\in \mathbf{K}\) and any number \(\lambda \in K\),
+there is a rule (the rule for multiplication by a number) leading to
+a (unique) element \(\lambda x \in \mathbf{K}\), called the \emph{product}
+of the element \(x\) and the number \(\lambda\).
+\item These two rules obey 8 specific axioms.
+\end{enumerate}
+
+\section*{Properties of the addition rule}
+\label{sec:orga39333f}
+
+\begin{enumerate}
+\item \(x+y=y+x\) for every \(x,y\in \mathbf{K}\) (commutative);
+\item \((x+y)+z=x+(y+z)\) for every \(x,y,z \in \mathbf{K}\) (associative);
+\item There exists an element \(0\in \mathbf{K}\) (the \emph{zero vector}) such
+that \(x+0=x\) for every \(x\in\mathbf{K}\);
+\item For every \(x\in\mathbf{K}\) there exists an element \(y\in\mathbf{K}\)
+(the \emph{negative element}) such that \(x+y=0\).
+\end{enumerate}
+
+\section*{Properties of the addition rule}
+\label{sec:orgfd9f181}
+
+Commutative:
+$$x+y=y+x\text{ for every }x,y\in \mathbf{K}$$
+
+Associative:
+$$(x+y)+z=x+(y+z)\text{ for every }x,y,z \in \mathbf{K}$$
+
+Identity element:
+$$\text{An element }\mathbf{0}\in\mathbf{K}\text{ exists, such
+that }x+\mathbf{0}=x\text{ for every }x\in K$$
+
+Inverse element:
+$$\text{For every }x\in\mathbf{K}\text{ there exist an element
+}y\in\mathbf{K}\text{ such that }x+y=\mathbf{0}$$
+\section*{Properties of the rule for multiplication by a number}
+\label{sec:org804fbc8}
+\begin{enumerate}
+\item \(1\cdot x=x\) for every \(x\in\mathbf{K}\);
+\item \(\alpha(\beta x)=(\alpha \beta)x\) for every \(x\in\mathbf{K}\) and
+every \(\alpha,\beta \in K\);
+\item \((\alpha+\beta)x = \alpha x + \beta x\) for every \(x\in\mathbf{K}\)
+and every \(\alpha,\beta \in K\);
+\item \(\alpha(x+y)=\alpha x+\alpha y\) for every \(x,y \in \mathbf{K}\) and
+every \(\alpha \in K\).
+\end{enumerate}
+\section*{Properties of multiplication}
+\label{sec:org5907f68}
+
+Identity element:
+$$ 1 \cdot x = x\text{ for every } x\in\mathbf{K}$$
+Associative: 
+$$ \alpha(\beta x)=(\alpha \beta) x \text{ for every } x\in\mathbf{K}
+\text{ and every } \alpha,\beta\in K$$
+Distributive with respect to \(\mathbf{K}\):
+$$(\alpha+\beta)x=\alpha x + \beta x \text{ for every } x\in\mathbf{K}
+\text{ and every } \alpha,\beta\in K$$
+Distributive with respect to \(K\):
+$$\alpha(x+y)=\alpha x+\alpha y \text{ for every } x,y \in\mathbf{K}
+\text{ and every } \alpha \in K$$
+
+\section*{Linear dependence}
+\label{sec:org7b98bc4}
+Let \(x_1,x_2,\ldots, x_k\) be vectors of the linear space \(\mathbf{K}\)
+over a field \(K\).
+Let \(\alpha_1,\alpha_2,\ldots, \alpha_k\) be numbers from \(K\).
+Then the vector \(\boxed{y=\alpha_1 x_1 + \alpha_2 x_2 +\cdots +
+\alpha_k x_k}\) is called a \emph{linear combination} of the vectors \(x_1,
+x_2, \ldots , x_k\).
+The numbers \(\alpha_1,\alpha_2,\ldots,\alpha_k\) are called the
+\emph{coefficients} of the linear combination.
+\end{document}
