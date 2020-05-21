@@ -1,0 +1,25 @@
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav li:not(:first-child) {
+    margin-top: 0rem;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 14px;
+}
+
+nav li a:hover {
+    outline-style: solid;
+    outline-color: #ddd
+}
